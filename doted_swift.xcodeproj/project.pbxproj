@@ -11,7 +11,28 @@
 		8C2EC0132932E72600B4DE57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EC0122932E72600B4DE57 /* ContentView.swift */; };
 		8C2EC0152932E72A00B4DE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2EC0142932E72A00B4DE57 /* Assets.xcassets */; };
 		8C2EC0182932E72A00B4DE57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2EC0172932E72A00B4DE57 /* Preview Assets.xcassets */; };
+		8C2EC01F2932E8B900B4DE57 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EC01E2932E8B900B4DE57 /* MapView.swift */; };
+		8C2EC0252933A5B100B4DE57 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C2EC0242933A5B000B4DE57 /* landmarkData.json */; };
+		8C2EC0272933A5F800B4DE57 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EC0262933A5F800B4DE57 /* Story.swift */; };
+		8C2EC0292933A76500B4DE57 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EC0282933A76500B4DE57 /* ModelData.swift */; };
+		8C2EC02E2933AB4200B4DE57 /* StoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EC02D2933AB4200B4DE57 /* StoryRow.swift */; };
+		8C2EC0302933BFD200B4DE57 /* StoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EC02F2933BFD200B4DE57 /* StoryList.swift */; };
+		8C2EC0332934120F00B4DE57 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EC0322934120E00B4DE57 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		8C2EC034293417E100B4DE57 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		8C2EC00D2932E72600B4DE57 /* doted_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doted_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +40,14 @@
 		8C2EC0122932E72600B4DE57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C2EC0142932E72A00B4DE57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C2EC0172932E72A00B4DE57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C2EC01E2932E8B900B4DE57 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8C2EC0242933A5B000B4DE57 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		8C2EC0262933A5F800B4DE57 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		8C2EC0282933A76500B4DE57 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		8C2EC02D2933AB4200B4DE57 /* StoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryRow.swift; sourceTree = "<group>"; };
+		8C2EC02F2933BFD200B4DE57 /* StoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryList.swift; sourceTree = "<group>"; };
+		8C2EC0322934120E00B4DE57 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8C2EC03529341E2400B4DE57 /* doted-swift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "doted-swift-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +80,11 @@
 		8C2EC00F2932E72600B4DE57 /* doted_swift */ = {
 			isa = PBXGroup;
 			children = (
+				8C2EC03529341E2400B4DE57 /* doted-swift-Info.plist */,
+				8C2EC031293411FC00B4DE57 /* Observable */,
+				8C2EC02C2933AB3300B4DE57 /* Views */,
+				8C2EC02B2933A82A00B4DE57 /* Resources */,
+				8C2EC02A2933A82200B4DE57 /* Model */,
 				8C2EC0102932E72600B4DE57 /* doted_swiftApp.swift */,
 				8C2EC0122932E72600B4DE57 /* ContentView.swift */,
 				8C2EC0142932E72A00B4DE57 /* Assets.xcassets */,
@@ -67,6 +101,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8C2EC02A2933A82200B4DE57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C2EC0262933A5F800B4DE57 /* Story.swift */,
+				8C2EC0282933A76500B4DE57 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C2EC02B2933A82A00B4DE57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C2EC0242933A5B000B4DE57 /* landmarkData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C2EC02C2933AB3300B4DE57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C2EC01E2932E8B900B4DE57 /* MapView.swift */,
+				8C2EC02D2933AB4200B4DE57 /* StoryRow.swift */,
+				8C2EC02F2933BFD200B4DE57 /* StoryList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C2EC031293411FC00B4DE57 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				8C2EC0322934120E00B4DE57 /* LocationManager.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +148,7 @@
 				8C2EC00B2932E72600B4DE57 /* Resources */,
 			);
 			buildRules = (
+				8C2EC034293417E100B4DE57 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -127,6 +197,7 @@
 			files = (
 				8C2EC0182932E72A00B4DE57 /* Preview Assets.xcassets in Resources */,
 				8C2EC0152932E72A00B4DE57 /* Assets.xcassets in Resources */,
+				8C2EC0252933A5B100B4DE57 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +209,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C2EC0132932E72600B4DE57 /* ContentView.swift in Sources */,
+				8C2EC01F2932E8B900B4DE57 /* MapView.swift in Sources */,
+				8C2EC02E2933AB4200B4DE57 /* StoryRow.swift in Sources */,
 				8C2EC0112932E72600B4DE57 /* doted_swiftApp.swift in Sources */,
+				8C2EC0332934120F00B4DE57 /* LocationManager.swift in Sources */,
+				8C2EC0272933A5F800B4DE57 /* Story.swift in Sources */,
+				8C2EC0292933A76500B4DE57 /* ModelData.swift in Sources */,
+				8C2EC0302933BFD200B4DE57 /* StoryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +346,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"doted_swift/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "doted-swift-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +375,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"doted_swift/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "doted-swift-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var locationManager = LocationManager()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        print("entrou no ContentView")
+        return TabView {
+            MapView()
+                .tabItem {
+                    Label(
+                        "Map View",
+                        systemImage: "map")
+                }
+            StoryList()
+                .tabItem {
+                    Label(
+                        "List View",
+                        systemImage: "list.bullet")
+                }
+        }.environmentObject(locationManager)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(LocationManager())
     }
 }
